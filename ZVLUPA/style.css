@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: 62px;
+    margin-right: 62px;
+    margin-top: 74px;
+    
+}
+.hoverMe{
+    
+    height: 600px;
+    width: 900px;
+    display: inline-block;
+}
+.hover{
+    
+    text-align: center;
+    font-size: 60px;
+}
+.hover h1{
+    margin-left: 13%;
+    margin-top: 10%;
+}
+.hoverMe:hover .up h1{
+    transform: translateY(-235px)
+}
+.hoverMe:hover .down h1{
+    transform: translateY(280px);
+}
+.up h1{
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+.down h1{
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+.kolors{
+    display: flex;
+    height: 115px;
+    width: 950px;
+    margin-top: 137px;
+}
+.color{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.color div{
+    height: 100%;
+    width: 20%;
+    transition: 299ms;
+}
+.color div:hover{
+    width: 60%;
+}
+.foto{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    margin-top: 20px;
+   
+}
+.hoverMe:hover .foto{
+    opacity: 1;
+}
+.zalupa h1{
+    font-size: 100px;    
+}
+.ttx{
+    background-color: rgba(236, 236, 236, 1);
+    border-radius: 20px;
+    height: 710px;
+    width: 779px;
+    position: absolute;
+    margin-bottom: 42px;
+    right: -620px;
+    transition: right 0.3s ease;
+}
+.text{
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 33px;
+    margin-right: 49px;
+    
+}
+.ttx:hover{
+    right: 60px;
+    
+}
